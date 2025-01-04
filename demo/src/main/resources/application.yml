@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://pippone:5432/demo_db #Invece di connettermi a localhost se sto utilizzando una applicazione ocntainerizzata userò il nome di questa
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
